@@ -14,7 +14,7 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
 
 ### Preview
 
-![Design preview for the Planets fact site coding challenge](./src/assets/images/preview.jpg)
+![Design preview for the Planets fact site coding challenge](src/assets/images/preview.jpg)
 
 ### Links
 
