@@ -1,7 +1,8 @@
 @import "global/reset";
 @import "global/colors";
 
-:root{
-  font-family: 'Antonio', sans-serif;
-  font-family: 'League Spartan', sans-serif;
+body{
+  background: $clr-darkBlue;
+  color: $clr-white;
+  overflow-x: hidden;
 }

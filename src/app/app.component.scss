@@ -1,9 +1,91 @@
 @import "../global/colors.scss";
 
-nav{
-  display: flex;
+ul {
+  /* display: flex;
+  justify-content: space-between;*/
 }
 
-nav a:nth-of-type(1){
-  margin-left: auto;
+.logo {
+  font-family: $ff-antonio;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.06563rem;
+  text-transform: uppercase;
+  margin-left: 1.5rem;
+  margin-top: 0.87rem;
+}
+
+a {
+  color: $clr-white;
+  font-family: $ff-spartan;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 35em) {
+  .flex-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-btn {
+    border: 0;
+    outline: 0;
+    aspect-ratio: 1;
+    width: 1.5rem;
+    background: url("../assets/images/icon-hamburger.svg") no-repeat;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  .menu-btn[aria-expanded="true"]{
+    background: url("../assets/images/icon-close.svg") no-repeat;
+  }
+  .primary-nav {
+    transform: translateX(100%);
+    max-height: 0;
+    transition: all 350ms ease-out;
+  }
+  .primary-nav[data-visible="true"] {
+    transition: all 350ms ease-out;
+    transform: translateX(0%);
+    max-height: 100%;
+  }
+  li {
+    margin-left: 2rem;
+  }
+  li a {
+    font-size: 0.9375rem;
+    letter-spacing: 0.08525rem;
+  }
+  li:not(.logo)::before {
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 100%;
+  }
+  li:nth-child(3)::before {
+    background-color: $clr-mercury;
+  }
+  li:nth-child(4)::before {
+    background-color: $clr-venus;
+  }
+  li:nth-child(5)::before {
+    background-color: $clr-earth;
+  }
+  li:nth-child(6)::before {
+    background-color: $clr-mars;
+  }
+  li:nth-child(7)::before {
+    background-color: $clr-jupiter;
+  }
+  li:nth-child(8)::before {
+    background-color: $clr-saturn;
+  }
+  li:nth-child(9)::before {
+    background-color: $clr-uranus;
+  }
+  li:nth-child(10)::before {
+    background-color: $clr-neptune;
+  }
 }

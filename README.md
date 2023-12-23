@@ -1,12 +1,12 @@
 # Frontend Mentor - Planets fact site solution
 
-This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## The challenge
 
- is to build out this 8-page planets fact site and get it looking as close to the design as possible.
+is to build out this 8-page planets fact site and get it looking as close to the design as possible.
 
- users should be able to:
+users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -42,17 +42,18 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log("🎉");
+};
 ```
-
 
 ### Continued development
 
@@ -62,14 +63,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Responsive navbar tutorial](https://www.youtube.com/watch?v=HbBMp6yUXO0&t=22s) - This tutorial presented by kevin powell helped me when making an accessible and responsive navbar
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
--   [LinkedIn](https://www.linkedin.com/in/amr-mohamed-7534a623b/)
--   [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)
-
-
+- [LinkedIn](https://www.linkedin.com/in/amr-mohamed-7534a623b/)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)

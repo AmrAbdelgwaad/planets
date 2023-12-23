@@ -11,4 +11,8 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'planets';
+  state = false;
+  toggle() {
+    this.state = !this.state;
+  }
 }

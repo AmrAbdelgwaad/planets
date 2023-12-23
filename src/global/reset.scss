@@ -11,6 +11,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
