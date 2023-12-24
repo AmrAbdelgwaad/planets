@@ -1,92 +1,26 @@
 <header>
   <div class="flex-group">
     <div class="logo">the planets</div>
-    <button class="menu-btn" aria-controls="primary-nav" [attr.aria-expanded]="state" (click)="toggle()">
+    <button
+      class="menu-btn"
+      aria-controls="primary-nav"
+      [attr.aria-expanded]="state"
+      (click)="toggle()"
+    >
       <span class="screen-reader">Manu</span>
     </button>
   </div>
   <nav>
-    <ul class="primary-nav" id="primary-nav"  [attr.data-visible]="state">
-      <li>
+    <ul class="primary-nav" id="primary-nav" [attr.data-visible]="state">
+      <li *ngFor="let anchor of anchors">
         <a
-          class="button"
-          routerLink="/mercury"
-          routerLinkActive="activebutton"
+          [class]="anchor.name"
+          [routerLink]="anchor.routerLink"
+          [routerLinkActive]="anchor.routerLinkActive"
           ariaCurrentWhenActive="page"
+          (click)="state = false"
+          >{{ anchor.name }}</a
         >
-          mercury
-        </a>
-      </li>
-
-      <li>
-        <a
-          class="button"
-          routerLink="/venus"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          venus
-        </a>
-      </li>
-      <li>
-        <a
-          class="button"
-          routerLink="/earth"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          earth
-        </a>
-      </li>
-      <li>
-        <a
-          class="button"
-          routerLink="/mars"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          mars
-        </a>
-      </li>
-      <li>
-        <a
-          class="button"
-          routerLink="/jupiter"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          jupiter
-        </a>
-      </li>
-      <li>
-        <a
-          class="button"
-          routerLink="/saturn"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          saturn
-        </a>
-      </li>
-      <li>
-        <a
-          class="button"
-          routerLink="/uranus"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          uranus
-        </a>
-      </li>
-      <li>
-        <a
-          class="button"
-          routerLink="/neptune"
-          routerLinkActive="activebutton"
-          ariaCurrentWhenActive="page"
-        >
-          neptune
-        </a>
       </li>
     </ul>
   </nav>

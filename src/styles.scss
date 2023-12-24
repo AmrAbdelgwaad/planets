@@ -1,8 +1,8 @@
 @import "global/reset";
-@import "global/colors";
+@import "global/variables";
 
 body{
-  background: $clr-darkBlue;
+  background-color: $clr-darkBlue;
   color: $clr-white;
-  overflow-x: hidden;
+  background-image: url("assets/images/background-stars.svg");
 }
