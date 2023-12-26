@@ -1,37 +1,38 @@
-Earth
+<!--
 
-<!-- Overview Content Start -->
+
+ Overview Content Start********
 
 Third planet from the Sun and the only known planet to harbor life.
 About 29.2% of Earth's surface is land with remaining 70.8% is
 covered with water. Earth's distance from the Sun, physical properties
 and geological history have allowed life to evolve and thrive.
 
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+Source : Wikipedia  URL: https://en.wikipedia.org/wiki/Earth
 
-<!-- Overview Content End -->
+ Overview Content End***********
 
-<!-- Internal Structure Content Start -->
+ Internal Structure Content Start********
 
 Earth's interior, like that of the other terrestrial planets, is divided
 into layers by their chemical or physical (rheological) properties. The
 outer layer is a chemically distinct silicate solid crust, which is
 underlain by a highly viscous solid mantle.
 
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+Source : Wikipedia URL: https://en.wikipedia.org/wiki/Earth#Internal_structure
 
-<!-- Internal Structure Content End -->
+ Internal Structure Content End********
 
-<!-- Surface Geology Content Start -->
+Surface Geology Content Start ********
 
 The total surface area of Earth is about 510 million km2. The continental
 crust consists of lower density material such as the igneous rocks granite
 and andesite. Less common is basalt, a denser volcanic rock that is the
 primary constituent of the ocean floors.
 
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
+Source : Wikipedia  URL: https://en.wikipedia.org/wiki/Earth#Surface
 
-<!-- Surface Geology Content End -->
+ Surface Geology Content End********
 
 01 Overview
 02 Internal Structure
@@ -48,3 +49,80 @@ Radius
 
 Average Temp.
 16°c
+-->
+<main>
+  <div role="tablist">
+    @for (tab of tabs; track tab){
+    <button
+      role="tab"
+      (click)="activateTab(tab.id)"
+      [attr.aria-selected]="activeTab === tab.id"
+      [attr.tabindex]="activeTab === tab.id ? 0 : -1"
+      [attr.aria-controls]="tab.panelId"
+    >
+      {{ tab.label }}
+    </button>
+    }
+  </div>
+
+  @if (activeTab === 1){
+  <div
+    role="tabpanel"
+    id="overview"
+    aria-labelledby="1"
+    tabindex="0"
+    [hidden]="activeTab !== 1"
+  >
+    <img
+      ngSrc="./assets/images/planet-earth.svg"
+      alt=""
+      height="450"
+      width="450"
+      priority="true"
+    />
+    <h1>Earth</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+  </div>
+  } @else if (activeTab === 2){
+  <div
+    role="tabpanel"
+    id="internal"
+    aria-labelledby="2"
+    tabindex="0"
+    [hidden]="activeTab !== 2"
+  >
+    <img
+      ngSrc="./assets/images/planet-earth-internal.svg"
+      alt=""
+      height="450"
+      width="450"
+    />
+    <h1>Earth</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+  </div>
+  }@else if (activeTab === 3){
+  <div
+    role="tabpanel"
+    id="surface"
+    aria-labelledby="3"
+    tabindex="0"
+    [hidden]="activeTab !== 3"
+  >
+    <img
+      ngSrc="./assets/images/planet-earth.svg"
+      alt=""
+      height="450"
+      width="450"
+    />
+    <img
+      ngSrc="./assets/images/geology-earth.png"
+      alt=""
+      height="398"
+      width="326"
+      style="margin-top: -5rem"
+    />
+    <h1>Earth</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+  </div>
+  }
+</main>
