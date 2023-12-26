@@ -3,10 +3,7 @@
 
  Overview Content Start********
 
-Third planet from the Sun and the only known planet to harbor life.
-About 29.2% of Earth's surface is land with remaining 70.8% is
-covered with water. Earth's distance from the Sun, physical properties
-and geological history have allowed life to evolve and thrive.
+
 
 Source : Wikipedia  URL: https://en.wikipedia.org/wiki/Earth
 
@@ -51,7 +48,7 @@ Average Temp.
 16°c
 -->
 <main>
-  <div role="tablist">
+  <div role="tablist" class="tabs">
     @for (tab of tabs; track tab){
     <button
       role="tab"
@@ -59,6 +56,7 @@ Average Temp.
       [attr.aria-selected]="activeTab === tab.id"
       [attr.tabindex]="activeTab === tab.id ? 0 : -1"
       [attr.aria-controls]="tab.panelId"
+      class="tab__btn"
     >
       {{ tab.label }}
     </button>
@@ -79,9 +77,19 @@ Average Temp.
       height="450"
       width="450"
       priority="true"
+      class="earth__img"
     />
-    <h1>Earth</h1>
-    <p>Lorem ipsum dolor sit amet</p>
+    <div class="tab__content">
+      <h1 class="title">Earth</h1>
+      <p class="tab__para">
+        Third planet from the Sun and the only known planet to harbor life.
+        About 29.2% of Earth's surface is land with remaining 70.8% is
+        covered with water. Earth's distance from the Sun, physical properties
+        and geological history have allowed life to evolve and thrive.
+      </p>
+    </div>
+
+
   </div>
   } @else if (activeTab === 2){
   <div
@@ -96,9 +104,12 @@ Average Temp.
       alt=""
       height="450"
       width="450"
+      class="earth__img"
     />
-    <h1>Earth</h1>
-    <p>Lorem ipsum dolor sit amet</p>
+    <div class="tab__content">
+      <h1 class="title">Earth</h1>
+      <p class="tab__para"></p>
+    </div>
   </div>
   }@else if (activeTab === 3){
   <div
@@ -113,16 +124,19 @@ Average Temp.
       alt=""
       height="450"
       width="450"
+      class="earth__img"
     />
     <img
       ngSrc="./assets/images/geology-earth.png"
       alt=""
       height="398"
       width="326"
-      style="margin-top: -5rem"
+      class="earth__img-geology"
     />
-    <h1>Earth</h1>
-    <p>Lorem ipsum dolor sit amet</p>
+    <div class="tab__content">
+      <h1 class="title">Earth</h1>
+      <p class="tab__para"></p>
+    </div>
   </div>
   }
 </main>

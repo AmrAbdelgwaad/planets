@@ -26,7 +26,7 @@ a:hover {
   .flex-group {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $clr-border;
+    border-bottom:  $border;
     padding-bottom: 1rem;
   }
   .menu-btn {
@@ -56,7 +56,7 @@ a:hover {
   li {
     margin-left: 4.25rem;
     margin-top: 2.56rem;
-    border-bottom: 1px solid $clr-border;
+    border-bottom:  $border;
     padding-bottom: 1.25rem;
     width: 15rem;
   }
@@ -116,7 +116,7 @@ a:hover {
     justify-content: center;
     gap: 2.06rem;
     padding-bottom: 1.69rem;
-    border-bottom: 1px solid $clr-border;
+    border-bottom: $border;
   }
   .menu-btn {
     display: none;
@@ -159,7 +159,7 @@ a:hover {
   header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $clr-border;
+    border-bottom: $border;
   }
   .logo {
     margin: 1.37rem 0 0 2rem;

@@ -1,3 +1,48 @@
-button[aria-selected="true"]{
-  background: #2d68f0;
+@import "../../global/variables";
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+  gap: 2.96rem;
+  border-bottom: $border;
+}
+
+.tab__btn {
+  border: none;
+  outline: none;
+  background: none;
+  color: $clr-white;
+  opacity: 0.5;
+  font-family: $ff-spartan;
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.12056rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 1.25rem;
+
+  &[aria-selected="true"] {
+    opacity: 1;
+    border-bottom: 4px solid $clr-earth;
+  }
+}
+
+.earth__img {
+  max-width: 10.8125rem;
+  margin: 4rem auto 0;
+}
+
+.earth__img-geology {
+  max-width: 5rem;
+  margin: -8.5rem auto 0;
+}
+
+.title {
+  text-align: center;
+  margin: 4.19rem 0 1rem;
+}
+
+.tab__para{
+  text-align: center;
 }
