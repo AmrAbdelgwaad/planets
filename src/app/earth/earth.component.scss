@@ -35,14 +35,79 @@
 
 .earth__img-geology {
   max-width: 5rem;
-  margin: -8.5rem auto 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.5rem;
+  margin-top: -4.5rem;
 }
 
+.tab__content {
+  display: grid;
+  place-items: center;
+}
 .title {
-  text-align: center;
+  font-family: $ff-antonio;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 4.19rem 0 1rem;
 }
 
-.tab__para{
+.tab__para {
   text-align: center;
+  font-family: $ff-spartan;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 20.4375rem;
+}
+
+.tab__source {
+  display: block;
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+
+.tab__anchor {
+  text-decoration: underline;
+  color: $clr-white;
+  &:after {
+    content: "";
+    background: url("../../assets/images/icon-source.svg") no-repeat;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+  }
+}
+
+.tab__lists {
+  // margin bottom minus .5
+  margin: 1.75rem auto 2.44rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 20.4375rem;
+  font-family: $ff-spartan;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04544rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border: $border;
+  margin: 0 auto .5rem;
+}
+
+.opaque{
+  opacity: 0.5;
+}
+.white{
+  font-family: $ff-antonio;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.04688rem;
 }
