@@ -28,15 +28,28 @@ export class EarthComponent {
   ];
   activeTab = 1;
 
-  @HostListener('keydown', ['$event'])
+  @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
-    switch (event.key) {
-      case 'ArrowRight':
-        this.activateNextTab();
-        break;
-      case 'ArrowLeft':
-        this.activatePreviousTab();
-        break;
+    if (window.matchMedia('(max-width: 44em)').matches) {
+      switch (event.key) {
+        case 'ArrowRight':
+          this.activateNextTab();
+          break;
+        case 'ArrowLeft':
+          this.activatePreviousTab();
+          break;
+      }
+    } else {
+      switch (event.key) {
+        case 'ArrowUp':
+          event.preventDefault();
+          this.activatePreviousTab();
+          break;
+        case 'ArrowDown':
+          event.preventDefault();
+          this.activateNextTab();
+          break;
+      }
     }
   }
 
