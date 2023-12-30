@@ -119,11 +119,11 @@
 @media (min-width: 44.25em) {
   .tabs {
     position: absolute;
-    top: 50%;
+    top: 0;
     flex-direction: column;
     left: 50%;
     margin-left: 4.31rem;
-    margin-top: 14.9rem;
+    margin-top: 42.25rem;
     gap: 1rem;
     border: none;
   }
@@ -207,13 +207,13 @@
   }
 }
 
-@media (min-width: 81.25em) {
+@media (min-width: 78.125em) {
   .tabs {
     right: 0;
     left: unset;
     margin-right: 9.5rem;
 
-    margin-top: 7.9rem;
+    margin-top: 36.06rem;
   }
   .tab__btn {
     width: 21.875rem;
