@@ -30,7 +30,7 @@ export class EarthComponent {
 
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
-    if (window.matchMedia('(max-width: 44em)').matches) {
+    if (window.matchMedia('(max-width: 44.25em)').matches) {
       switch (event.key) {
         case 'ArrowRight':
           this.activateNextTab();

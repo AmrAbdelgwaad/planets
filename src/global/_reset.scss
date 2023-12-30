@@ -30,9 +30,9 @@ a:not([class]) {
 
 img,
 picture {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   display: block;
+  height: auto;
 }
 
 input,
