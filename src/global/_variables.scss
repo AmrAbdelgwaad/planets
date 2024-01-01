@@ -25,6 +25,31 @@ $clr-neptune-ball: #497EFA;
 $border: 1px solid hsla(0,0%,100%,.1);
 
 /*fonts*/
+/* antonio-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/antonio-v19-latin-regular.woff2') format('woff2');
+}
 
+
+/* league-spartan-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/league-spartan-v11-latin-regular.woff2') format('woff2');
+}
+/* league-spartan-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/league-spartan-v11-latin-700.woff2') format('woff2');
+}
 $ff-antonio: "Antonio", sans-serif;
 $ff-spartan: "League Spartan", sans-serif;

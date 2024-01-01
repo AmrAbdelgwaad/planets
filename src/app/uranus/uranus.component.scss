@@ -1,0 +1,33 @@
+.tab__img-uranus {
+  max-width: 11rem;
+}
+
+@media (min-width: 44.25em) {
+  .tab__img-uranus {
+    max-width: 18.125rem;
+  }
+  .title {
+    margin: 4.81rem 13.3rem 1.5rem 0;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .tab__img-uranus {
+    max-width: 28.625rem;
+    margin-left: 15.69rem;
+  }
+  .img__geology {
+    margin-left: 24.7rem;
+    margin-top: 29rem;
+  }
+  .tab__content {
+    margin-right: 3.5rem;
+  }
+  .title {
+    margin-top: 7.88rem;
+  }
+  .tab__lists {
+    margin-top: 8.62rem;
+  }
+
+}

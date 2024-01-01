@@ -1,0 +1,32 @@
+.tab__img-jupiter {
+  max-width: 14rem;
+}
+
+@media (min-width: 44.25em) {
+  .tab__img-jupiter {
+    max-width: 23.0625rem;
+  }
+  .title {
+    margin: 2.31rem 13.5rem 1.5rem 0;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .tab__img-jupiter {
+    max-width: 36.375rem;
+    margin-left: 11.81rem;
+  }
+  .img__geology {
+    margin-left: 20.8rem;
+    margin-top: 25rem;
+  }
+  .tab__content {
+    margin-right: 4.5rem;
+  }
+  .title {
+    margin-top: 7.88rem;
+  }
+  .tab__lists {
+    margin-top: 5.44rem;
+  }
+}

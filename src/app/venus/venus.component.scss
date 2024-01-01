@@ -1,0 +1,32 @@
+.tab__img-venus {
+  max-width: 9.625rem;
+}
+
+@media (min-width: 44.25em) {
+  .tab__img-venus {
+    max-width: 15.8125rem;
+  }
+  .title {
+    margin: 5.94rem 15rem 1.5rem 0;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .tab__img-venus {
+    max-width: 25rem;
+    margin-left: 17.5rem;
+  }
+  .img__geology {
+    margin-left: 24.9rem;
+    margin-top: 28rem;
+  }
+  .tab__content {
+    margin-right: 5.5rem;
+  }
+  .title {
+    margin-top: 7.88rem;
+  }
+  .tab__lists {
+    margin-top: 10.44rem;
+  }
+}

@@ -1,13 +1,13 @@
 <header>
   <div class="flex-group">
-    <div class="logo">the planets</div>
+    <a class="logo" routerLink="/earth">the planets</a>
     <button
       class="menu-btn"
       aria-controls="primary-nav"
       [attr.aria-expanded]="state"
       (click)="toggle()"
     >
-      <span class="screen-reader">Manu</span>
+      <span class="sr-only">Manu</span>
     </button>
   </div>
   <nav>

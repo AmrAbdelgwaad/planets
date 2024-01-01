@@ -1,0 +1,33 @@
+.tab__img-mercury {
+  max-width: 6.9375rem;
+}
+
+@media (min-width: 44.25em) {
+  .tab__img-mercury {
+    max-width: 11.5rem;
+  }
+  .title {
+    margin: 8.12rem 11.7rem 1.5rem 0;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .tab__img-mercury {
+    max-width: 18.125rem;
+    margin-left: 20.94rem;
+  }
+  .img__geology {
+    margin-left: 24.9rem;
+    margin-top: 25rem;
+  }
+  .tab__content {
+    margin-right: 3.5rem;
+  }
+  .title {
+    margin-top: 7.88rem;
+  }
+  .tab__lists {
+    margin-top: 13.88rem;
+  }
+
+}

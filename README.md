@@ -18,54 +18,66 @@ users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  [Solution URL](https://your-solution-url.com)
+-  [Live Site URL](https://planets-jet.vercel.app/earth)
 
 ## My process
 
 ### Built with
 
+- Angular 17 
+- Angular routing
+- TypeScript
 - Semantic HTML5 markup
-- Sass
+- Scss
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Angular
-- Angular routing
+- Bem (I am not 100% using it, it just offers some guidelines for me to follow)
+- Webstorm
+
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+- <h3 style="color: #d83a34; font-size: 18px; line-height: 1.5;">I really enjoyed using the binding system in angular:</h3>
+```angular2html
+ <button
+  class="menu-btn"
+  aria-controls="primary-nav"
+  [attr.aria-expanded]="state"
+  (click)="toggle()"
+>
+</button>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+- <h3 style="color: #497EFA; font-size: 18px; line-height: 1.5;">I am new to angular and javascript frameworks in general, but I liked this 
+routing system:</h3>
+```typescript
+export const routes: Routes = [
+  { path: 'mercury', component: MercuryComponent },
+  { path: 'venus', component: VenusComponent },
+  { path: 'earth', component: EarthComponent },
+  { path: 'mars', component: MarsComponent },
+  { path: 'jupiter', component: JupiterComponent },
+  { path: 'saturn', component: SaturnComponent },
+  { path: 'uranus', component: UranusComponent },
+  { path: 'neptune', component: NeptuneComponent },
+  { path: '', redirectTo: '/earth', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
+]
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+- In this project I could probably use grid instead of position absolute I realized that later doing the project, and 
+I am not that powerful with grid  I will work more on my grid skills and come back later to refactor this project
+---
 ### Useful resources
 
 - [Responsive navbar tutorial](https://www.youtube.com/watch?v=HbBMp6yUXO0&t=22s) - This tutorial presented by kevin powell helped me when making an accessible and responsive navbar
 - [How to Create Tabs With JavaScript](https://www.codeconcisely.com/posts/javascript-tabs/) - this was really helpful when making tabs
-
+- [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - this site made it really easy to import the fonts locally 
+- [codpen 404 page](https://codepen.io/salehriaz/pen/erJrZM) - I used some of this pen on my 404 page
+- [universe button](https://uiverse.io/shah1345/spicy-liger-32) - I used this button im my 404 page
 
 ## Me
 

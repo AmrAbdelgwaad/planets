@@ -1,50 +1,146 @@
-Venus
+<main>
+  <div role="tablist" class="tabs">
+    @for (tab of tabs; track tab) {
+    <button
+      role="tab"
+      (click)="activateTab(tab.id)"
+      [attr.aria-selected]="activeTab === tab.id"
+      [attr.tabindex]="activeTab === tab.id ? 0 : -1"
+      [attr.aria-controls]="tab.panelId"
+      class="tab__btn tab__btn-venus"
+    >
+      {{ tab.label }}
+      <span class="sr-only all">{{ tab.hidden }}</span>
+    </button>
+    }
+  </div>
 
-<!-- Overview Content Start -->
+  @if (activeTab === 1) {
+  <div
+    role="tabpanel"
+    id="overview"
+    aria-labelledby="1"
+    tabindex="0"
+    [hidden]="activeTab !== 1"
+    class="tab__panel"
+  >
+    <img
+      ngSrc="./assets/images/planet-venus.svg"
+      alt=""
+      height="450"
+      width="450"
+      class="tab__img tab__img-venus"
+      priority="true"
+    />
+    <div class="tab__content">
+      <h1 class="title">venus</h1>
+      <p class="tab__para">
+        Venus is the second planet from the Sun. It is named after the Roman
+        goddess of love and beauty. As the brightest natural object in Earth's
+        night sky after the Moon, Venus can cast shadows and can be, on rare
+        occasions, visible to the naked eye in broad daylight.
+        <span class="tab__source"
+          >Source :<a
+            href="https://en.wikipedia.org/wiki/Venus"
+            class="tab__anchor"
+            target="_blank"
+            >Wikipedia</a
+          ></span
+        >
+      </p>
+    </div>
+  </div>
+  } @else if (activeTab === 2) {
+  <div
+    role="tabpanel"
+    id="internal"
+    aria-labelledby="2"
+    tabindex="0"
+    [hidden]="activeTab !== 2"
+    class="tab__panel"
+  >
+    <img
+      ngSrc="./assets/images/planet-venus-internal.svg"
+      alt=""
+      height="450"
+      width="450"
+      class="tab__img tab__img-venus"
+    />
+    <div class="tab__content">
+      <h1 class="title">venus</h1>
+      <p class="tab__para">
+        The similarity in size and density between Venus and Earth suggests they
+        share a similar internal structure: a core, mantle, and crust. Like that
+        of Earth, Venusian core is most likely at least partially liquid because
+        the two planets have been cooling at about the same rate.
+        <span class="tab__source"
+          >Source :<a
+            href="https://en.wikipedia.org/wiki/Venus#Internal_structure"
+            class="tab__anchor"
+            target="_blank"
+            >Wikipedia</a
+          ></span
+        >
+      </p>
+    </div>
+  </div>
+  } @else if (activeTab === 3) {
+  <div
+    role="tabpanel"
+    id="surface"
+    aria-labelledby="3"
+    tabindex="0"
+    [hidden]="activeTab !== 3"
+    class="tab__panel"
+  >
+    <img
+      ngSrc="./assets/images/planet-venus.svg"
+      alt=""
+      height="450"
+      width="450"
+      class="tab__img tab__img-venus"
+    />
+    <img
+      ngSrc="./assets/images/geology-venus.png"
+      alt=""
+      height="398"
+      width="326"
+      class="img__geology"
+    />
+    <div class="tab__content">
+      <h1 class="title">venus</h1>
+      <p class="tab__para">
+        Much of the Venusian surface appears to have been shaped by volcanic
+        activity. Venus has several times as many volcanoes as Earth, and it has
+        167 large volcanoes that are over 100 km (60 mi) across. The only
+        volcanic complex of this size on Earth is the Big Island of Hawaii.
+        <span class="tab__source"
+          >Source :<a
+            href="https://en.wikipedia.org/wiki/Venus#Surface"
+            class="tab__anchor"
+            target="_blank"
+            >Wikipedia</a
+          ></span
+        >
+      </p>
+    </div>
+  </div>
+  }
 
-Venus is the second planet from the Sun. It is named after the
-Roman goddess of love and beauty. As the brightest natural object
-in Earth's night sky after the Moon, Venus can cast shadows and
-can be, on rare occasions, visible to the naked eye in broad daylight.
-
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
-
-<!-- Overview Content End -->
-
-<!-- Internal Structure Content Start -->
-
-The similarity in size and density between Venus and Earth suggests
-they share a similar internal structure: a core, mantle, and crust.
-Like that of Earth, Venusian core is most likely at least partially
-liquid because the two planets have been cooling at about the same rate.
-
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
-
-<!-- Internal Structure Content End -->
-
-<!-- Surface Geology Content Start -->
-
-Much of the Venusian surface appears to have been shaped by volcanic activity.
-Venus has several times as many volcanoes as Earth, and it has 167 large
-volcanoes that are over 100 km (60 mi) across. The only volcanic complex
-of this size on Earth is the Big Island of Hawaii.
-
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
-
-<!-- Surface Geology Content End -->
-
-01 Overview
-02 Internal Structure
-03 Surface Geology
-
-Rotation Time
-243 Days
-
-Revolution Time
-224.7 Days
-
-Radius
-6,051.8 KM
-
-Average Temp.
-471°c
+  <ul class="tab__lists">
+    <li class="list">
+      <span class="opaque">Rotation Time</span
+      ><span class="white">243 Days</span>
+    </li>
+    <li class="list">
+      <span class="opaque">Revolution Time</span
+      ><span class="white">224.7 Days</span>
+    </li>
+    <li class="list">
+      <span class="opaque">Radius</span><span class="white">6,051.8 KM</span>
+    </li>
+    <li class="list">
+      <span class="opaque">Average Temp.</span><span class="white">1471°c</span>
+    </li>
+  </ul>
+</main>

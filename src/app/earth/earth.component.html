@@ -8,9 +8,10 @@
         [attr.aria-selected]="activeTab === tab.id"
         [attr.tabindex]="activeTab === tab.id ? 0 : -1"
         [attr.aria-controls]="tab.panelId"
-        class="tab__btn"
+        class="tab__btn tab__btn-earth"
       >
         {{ tab.label }}
+        <span class="sr-only all">{{tab.hidden}}</span>
       </button>
       }
     </div>
@@ -29,7 +30,8 @@
         alt=""
         height="450"
         width="450"
-        class="earth__img"
+        class="tab__img tab__img-earth"
+        priority="true"
       />
       <div class="tab__content">
         <h1 class="title">Earth</h1>
@@ -63,7 +65,7 @@
         alt=""
         height="450"
         width="450"
-        class="earth__img"
+        class="tab__img tab__img-earth"
       />
       <div class="tab__content">
         <h1 class="title">Earth</h1>
@@ -97,14 +99,14 @@
         alt=""
         height="450"
         width="450"
-        class="earth__img"
+        class="tab__img tab__img-earth"
       />
       <img
         ngSrc="./assets/images/geology-earth.png"
         alt=""
         height="398"
         width="326"
-        class="earth__img-geology"
+        class="img__geology"
       />
       <div class="tab__content">
         <h1 class="title">Earth</h1>

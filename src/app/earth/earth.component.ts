@@ -13,16 +13,19 @@ export class EarthComponent {
     {
       id: 1,
       label: 'Overview',
+      hidden: '',
       panelId: 'overview',
     },
     {
       id: 2,
       label: 'Internal',
+      hidden: 'structure',
       panelId: 'internal',
     },
     {
       id: 3,
       label: 'Surface',
+      hidden: 'geology',
       panelId: 'surface',
     },
   ];

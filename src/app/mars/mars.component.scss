@@ -1,0 +1,33 @@
+.tab__img-mars {
+  max-width: 6.9375rem;
+}
+
+@media (min-width: 44.25em) {
+  .tab__img-mars {
+    max-width: 13.3125rem;
+  }
+  .title {
+    margin: 7.19rem 15.5rem 1.5rem 0;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .tab__img-mars {
+    max-width: 21rem;
+    margin-left: 19.5rem;
+  }
+  .img__geology {
+    margin-left: 24.9rem;
+    margin-top: 25rem;
+  }
+  .tab__content {
+    margin-right: 6.2rem;
+  }
+  .title {
+    margin-top: 7.88rem;
+  }
+  .tab__lists {
+    margin-top: 11.44rem;
+  }
+
+}

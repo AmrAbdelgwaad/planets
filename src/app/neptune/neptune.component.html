@@ -1,48 +1,148 @@
-Neptune
 
-<!-- Overview Content Start -->
+<main>
+  <div role="tablist" class="tabs">
+    @for (tab of tabs; track tab) {
+      <button
+        role="tab"
+        (click)="activateTab(tab.id)"
+        [attr.aria-selected]="activeTab === tab.id"
+        [attr.tabindex]="activeTab === tab.id ? 0 : -1"
+        [attr.aria-controls]="tab.panelId"
+        class="tab__btn tab__btn-neptune"
+      >
+        {{ tab.label }}
+        <span class="sr-only all">{{ tab.hidden }}</span>
+      </button>
+    }
+  </div>
 
-Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar
-System, it is the fourth-largest planet by diameter, the third-most-massive planet,
-and the densest giant planet. It is 17 times the mass of Earth, more massive than
-its near-twin Uranus.
+  @if (activeTab === 1) {
+    <div
+      role="tabpanel"
+      id="overview"
+      aria-labelledby="1"
+      tabindex="0"
+      [hidden]="activeTab !== 1"
+      class="tab__panel"
+    >
+      <img
+        ngSrc="./assets/images/planet-neptune.svg"
+        alt=""
+        height="450"
+        width="450"
+        class="tab__img tab__img-neptune"
+        priority="true"
+      />
+      <div class="tab__content">
+        <h1 class="title">neptune</h1>
+        <p class="tab__para">
+          Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar
+          System, it is the fourth-largest planet by diameter, the third-most-massive planet,
+          and the densest giant planet. It is 17 times the mass of Earth, more massive than
+          its near-twin neptune.
+          <span class="tab__source"
+          >Source :<a
+            href="https://en.wikipedia.org/wiki/neptune"
+            class="tab__anchor"
+            target="_blank"
+          >Wikipedia</a
+          ></span
+          >
+        </p>
+      </div>
+    </div>
+  } @else if (activeTab === 2) {
+    <div
+      role="tabpanel"
+      id="internal"
+      aria-labelledby="2"
+      tabindex="0"
+      [hidden]="activeTab !== 2"
+      class="tab__panel"
+    >
+      <img
+        ngSrc="./assets/images/planet-neptune-internal.svg"
+        alt=""
+        height="450"
+        width="450"
+        class="tab__img tab__img-neptune"
+      />
+      <div class="tab__content">
+        <h1 class="title">neptune</h1>
+        <p class="tab__para">
+          Neptune's internal structure resembles that of neptune. Its atmosphere forms about 5%
+          to 10% of its mass and extends perhaps 10% to 20% of the way towards the core.
+          Increasing concentrations of methane, ammonia and water are found in the lower regions.
+          <span class="tab__source"
+          >Source :<a
+            href="https://en.wikipedia.org/wiki/neptune#Internal_structure"
+            class="tab__anchor"
+            target="_blank"
+          >Wikipedia</a
+          ></span
+          >
+        </p>
+      </div>
+    </div>
+  } @else if (activeTab === 3) {
+    <div
+      role="tabpanel"
+      id="surface"
+      aria-labelledby="3"
+      tabindex="0"
+      [hidden]="activeTab !== 3"
+      class="tab__panel"
+    >
+      <img
+        ngSrc="./assets/images/planet-neptune.svg"
+        alt=""
+        height="450"
+        width="450"
+        class="tab__img tab__img-neptune"
+      />
+      <img
+        ngSrc="./assets/images/geology-neptune.png"
+        alt=""
+        height="398"
+        width="326"
+        class="img__geology"
+      />
+      <div class="tab__content">
+        <h1 class="title">neptune</h1>
+        <p class="tab__para">
+          Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also
+          present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in
+          the red and infrared portion of the spectrum.
 
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
+          <span class="tab__source"
+          >Source :<a
+            href="https://en.wikipedia.org/wiki/neptune#Surface"
+            class="tab__anchor"
+            target="_blank"
+          >Wikipedia</a
+          ></span
+          >
+        </p>
+      </div>
+    </div>
+  }
 
-<!-- Overview Content End -->
+  <ul class="tab__lists">
+    <li class="list">
+      <span class="opaque">Rotation Time</span
+      ><span class="white">16.08 Hours</span>
+    </li>
+    <li class="list">
+      <span class="opaque">Revolution Time</span
+      ><span class="white">164.79 Years</span>
+    </li>
+    <li class="list">
+      <span class="opaque">Radius</span><span class="white">24,622 KM</span>
+    </li>
+    <li class="list">
+      <span class="opaque">Average Temp.</span><span class="white">-201°c</span>
+    </li>
+  </ul>
+</main>
 
-<!-- Internal Structure Content Start -->
 
-Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5%
-to 10% of its mass and extends perhaps 10% to 20% of the way towards the core.
-Increasing concentrations of methane, ammonia and water are found in the lower regions.
-
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
-
-<!-- Internal Structure Content End -->
-
-<!-- Surface Geology Content Start -->
-
-Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also
-present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in
-the red and infrared portion of the spectrum.
-
-Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
-
-<!-- Surface Geology Content End -->
-
-01 Overview
-02 Internal Structure
-03 Surface Geology
-
-Rotation Time
-16.08 Hours
-
-Revolution Time
-164.79 Years
-
-Radius
-24,622 KM
-
-Average Temp.
--201°c
