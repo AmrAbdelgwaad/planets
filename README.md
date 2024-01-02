@@ -18,7 +18,7 @@ users should be able to:
 
 ### Links
 
--  [Solution URL](https://your-solution-url.com)
+-  [Solution URL](https://www.frontendmentor.io/solutions/planetsfactsite-using-angular-17-gOP497seth)
 -  [Live Site URL](https://planets-jet.vercel.app/earth)
 
 ## My process
