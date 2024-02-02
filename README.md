@@ -81,5 +81,5 @@ I am not that powerful with grid  I will work more on my grid skills and come ba
 
 ## Me
 
-- [LinkedIn](https://www.linkedin.com/in/amr-mohamed-7534a623b/)
+- [LinkedIn](https://www.linkedin.com/in/amrabelgawad/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/AmrAbdelgwaad)
